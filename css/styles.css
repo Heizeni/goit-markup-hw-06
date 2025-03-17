@@ -37,6 +37,8 @@ nav {
 
 img {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 header {
@@ -131,6 +133,10 @@ header {
 	  height: 72px;
 	  width: 100%;
 	}
+
+	@media only screen and (min-width: 1158px) {
+	   justify-content: flex-start;
+	}
 }
 
 .page-header {
@@ -183,14 +189,14 @@ header {
 	   flex-wrap: wrap;
 	   flex-direction: row;
 	   margin:auto 0;
-	   row-gap: 12px;
-	   gap: 0;
+	   gap: 12px;
 	   width: 120px;
 	}
 
 	@media only screen and (min-width: 1158px) {
 		width: auto;
 		gap: 40px;
+		margin-left: 332px;
 	 }
 }
 
@@ -369,13 +375,14 @@ header {
 	align-items: center;
 	text-align: center;
 	background-color: #2E2F42;
-	padding: 72px 52px;
+	padding-top: 72px;
+	padding-bottom: 72px;
 	background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	max-width: 1440px;
-	height: 432px;
+	/* height: 432px; */
 
 	@media (min-width: 768px) {
 	   height: 436px;
@@ -385,6 +392,12 @@ header {
 	@media (min-width: 1158px) {
 	   height: 600px;
 	   padding: 188px 0;
+	}
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		.image-container {
+			background-image: url("../images/people-office-1@2x.jpg");
+		}
 	}
 }
 
@@ -715,13 +728,15 @@ header {
 	@media only screen and (min-width: 768px) {
 	   flex-direction: row;
 	   flex-wrap: wrap;
-	   justify-content: center;
+	   width: 584px;
 	   align-items: baseline;
 	}
 
 	@media only screen and (min-width: 1158px) {
 		flex-direction: row;
 		flex-wrap: nowrap;
+		gap: unset;
+		width: 100%;
 
 	}
 }
@@ -730,7 +745,7 @@ header {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	width: 264px;
-	margin-top: 16px;
+	/* margin-top: 16px; */
 }
 
 .logo-footer {
@@ -754,6 +769,10 @@ header {
 
 	@media only screen and (min-width: 768px) {
 	   align-items: flex-start;
+	}
+
+	@media only screen and (min-width: 1158px) {
+	   margin-right: 120px;
 	}
 
 }
@@ -797,7 +816,6 @@ header {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	gap: 16px;
 
 	@media only screen and (min-width: 768px) {
 	   flex-direction: row;
@@ -806,7 +824,6 @@ header {
 
 	@media only screen and (min-width: 1158px) {
 	   flex-direction: row;
-	   gap: 24px;
 
 	}
 }
@@ -819,6 +836,7 @@ header {
 
 	@media only screen and (min-width: 768px) {
 	   align-items: flex-start;
+	   justify-content: flex-start;
 	}
 
 	@media only screen and (min-width: 1158px) {
@@ -841,7 +859,11 @@ header {
 	line-height: 2;
 	letter-spacing: 0.04em;
 	font-weight: 400;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	
+	@media only screen and (min-width: 768px) {
+	   margin-right: 24px;
+	}
 }
 
 .subscribe-input::placeholder {
@@ -863,7 +885,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 16px;
+	/* gap: 16px; */
 	cursor: pointer;
 }
 

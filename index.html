@@ -16,15 +16,20 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <nav class="header-nav">
-                <a href="./index.html" class="logo">Web<span class="webstudio">Studio</span></a>
+            <a href="./index.html" class="logo">Web<span class="webstudio">Studio</span></a>
+            <button type="button" class="menu-button">
+                <svg class="icon-menu" width="16.8" height="14.4">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <nav class="header-nav not-shown">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="./index.html" class="link-nav is-active-nav">Studio</a></li>
                     <li class="nav-item"><a href="" class="link-nav">Portfolio</a></li>
                     <li class="nav-item"><a href="" class="link-nav">Contacts</a></li>
                 </ul>
             </nav>
-            <address class="contacts">
+            <address class="contacts not-shown">
                 <ul class="page-contacts">
                     <li><a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a></li>
                     <li><a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a></li>
@@ -33,15 +38,68 @@
         </div>
     </header>
 
+<div class="menu-overlay">
+    <div class="menu">
+            <button type="button" class="close-btn">
+                <svg class="form-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="./index.html" class="link-nav is-active-nav">Studio</a></li>
+                <li class="nav-item"><a href="" class="link-nav">Portfolio</a></li>
+                <li class="nav-item"><a href="" class="link-nav">Contacts</a></li>
+            </ul>
+        </nav>
+        <address class="contacts">
+            <ul class="page-contacts">
+                <li><a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a></li>
+                <li><a href="tel:+110001111111" class="link-contacts">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+        <ul class="socials">
+            <li class="team-item">
+                <a href="https://www.instagram.com/" target="_blank" class="team-contact">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team-item">
+                <a href="https://www.twitter.com/" target="_blank" class="team-contact">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team-item">
+                <a href="https://www.facebook.com/" target="_blank" class="team-contact">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="team-item">
+                <a href="https://www.linkedin.com/" target="_blank" class="team-contact">
+                    <svg class="team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
     <main>
-        <section class="hero-section container">
-            <div class="container hero-container">
-                <h1 class="page-title">Effective Solutions for Your Business</h1>
+        <section class="hero section">
+            <div class="container">
+                <h1 class="page-title">Effective Solutions<br> for Your Business</h1>
                 <button type="button" class="servicebtn">Order Service</button>
             </div>
         </section>
 
-        <section class="aboutus section">
+        <section class="aboutus section ">
             <div class="container">
                 <h2 class="section-title visually-hidden">Section 2</h2>
                 <ul class="card-list">
@@ -86,14 +144,14 @@
             </div>
         </section>
 
-        <section id="ourteam" class="section-ourteam section">
+        <section id="ourteam" class="ourteam section">
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
                 <ul class="ourteam-card-list">
                     <li class="team-card">
                         <img class="card-img" src="./images/img.jpg" alt="Product designer Mark Guerrero" width="264" height="260"/>
                         <div class="team-content">
-                            <h3 class="title">Mark Guerrero</h3>
+                            <h3 class="card-title">Mark Guerrero</h3>
                             <p class="text">Product Designer</p>
                             <ul class="socials">
                                 <li class="team-item">
@@ -130,7 +188,7 @@
                     <li class="team-card">
                         <img class="card-img" src="./images/img-1.jpg" alt="Frontend Developer Tom Ford" width="264" height="260" />
                         <div class="team-content">
-                            <h3 class="title">Tom Ford</h3>
+                            <h3 class="card-title">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
                             <ul class="socials">
                                 <li class="team-item">
@@ -167,7 +225,7 @@
                     <li class="team-card">
                         <img class="card-img" src="./images/img-2.jpg" alt="Camila Garcia, Marketing" width="264" height="260" />
                         <div class="team-content">
-                            <h3 class="title">Camila Garcia</h3>
+                            <h3 class="card-title">Camila Garcia</h3>
                             <p class="text">Marketing</p>
                             <ul class="socials">
                                 <li class="team-item">
@@ -204,7 +262,7 @@
                     <li class="team-card">
                         <img class="card-img" src="./images/img-3.jpg" alt="UI designer Daniel Wilson" width="264" height="260" />
                         <div class="team-content">
-                            <h3 class="title">Daniel Wilson</h3>
+                            <h3 class="card-title">Daniel Wilson</h3>
                             <p class="text">UI Designer</p>
                             <ul class="socials">
                                 <li class="team-item">
@@ -241,7 +299,8 @@
                 </ul>
             </div>
         </section>
-        <section id="portfolio" class="section-portfolio section">
+
+        <section id="portfolio" class="portfolio section">
             <div class="container">
                 <h2 class="section-title">Our Portfolio</h2>
                 <ul class="portfolio-card-list">
@@ -335,64 +394,64 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-left">
-                <a href="./index.html" class="logo-footer">Web<span class="studio">Studio</span></a>
-                <p class="footer-text">
-                    Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-                </p>
-            </div>
-            <div class="footer-right">
-                <p class="footer-media">Social media</p>
-                <ul class="socials-footer">
-                    <li class="socials-item">
-                        <a href="https://www.instagram.com/" target="_blank" class="socials-links">
-                            <svg class="socials-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-instagram"></use>
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <a href="./index.html" class="logo-footer">Web<span class="studio">Studio</span></a>
+                    <p class="footer-text">
+                        Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-media">Social media</p>
+                    <ul class="socials-footer">
+                        <li class="socials-item">
+                            <a href="https://www.instagram.com/" target="_blank" class="socials-links">
+                                <svg class="socials-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://www.twitter.com/" target="_blank" class="socials-links">
+                                <svg class="socials-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://www.facebook.com/" target="_blank" class="socials-links">
+                                <svg class="socials-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://www.linkedin.com/" target="_blank" class="socials-links">
+                                <svg class="socials-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-container">
+                    <p class="footer-media">Subscribe</p>
+                    <form class="footer-subscribe">
+                        <label class="footer-media sub-label">
+                            <input type="email" name="email" placeholder="E-mail" class="subscribe-input" />
+                        </label>
+                        <button type="submit" class="sub-button">
+                            Subscribe
+                            <svg class="form-vector" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="socials-item">
-                        <a href="https://www.twitter.com/" target="_blank" class="socials-links">
-                            <svg class="socials-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-item">
-                        <a href="https://www.facebook.com/" target="_blank" class="socials-links">
-                            <svg class="socials-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials-item">
-                        <a href="https://www.linkedin.com/" target="_blank" class="socials-links">
-                            <svg class="socials-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe-container">
-                <p class="footer-media">Subscribe</p>
-                <form class="footer-subscribe">
-                    <label class="footer-media sub-label">
-                        <input type="email" name="email" placeholder="E-mail" class="subscribe-input" />
-                    </label>
-                    <button type="submit" class="sub-button">
-                        Subscribe
-                        <svg class="form-vector" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </div>
+                        </button>
+                    </form>
+                </div>
+            </div>    
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay ">
         <div class="modal">
             <button type="button" class="close-btn">
                 <svg class="form-icon" width="8" height="8">
